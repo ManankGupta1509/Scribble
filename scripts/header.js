@@ -1,38 +1,41 @@
-var signup = document.getElementsByClassName("Signup")[0];
+// model
+var model = document.querySelectorAll(".modal");
+// button
+var btn = document.querySelectorAll(".btn");
+// close button 
+var cloose=document.querySelectorAll(".close");
 
-var signup_btn = document.getElementById("btn");
 
-var signup_close=document.getElementsByClassName("close")[1];
+var j;
+for(j=0;j<btn.length;j++)
+{   //current button
+    let b=btn[j];
+    //current modal
+    let m=model[j];
+    //current close btn
+    let c=cloose[j];
 
-signup_btn.onclick = function() {
-    signup.style.display = "flex";
-
+//on click of button
+b.onclick = function() {
+    //display model
+    m.style.display = "flex";
+    //onclick of close button
+    c.onclick=function() {
+    //close model
+    m.style.display="none";
+}
+}
 }
 
-signup_close.onclick=function () {
-    signup.style.display="none";
-}
 
-
-
-var signin = document.getElementsByClassName("Signin")[0];
-
-var signin_btn = document.getElementById("btn1");
-
-var signin_close=document.getElementsByClassName("close")[0];
-
-signin_btn.onclick = function() {
-    signin.style.display = "flex";
-
-}
-
-signin_close.onclick=function () {
-    signin.style.display="none";
-}
-
+//signin modal
+var signin=document.getElementsByClassName("si")[0];
+//signup modal
+var signup=document.getElementsByClassName("su")[0];
 
 var goToSignUp=document.getElementById("goToSignUp");
 
+//mapping signin to signup
 goToSignUp.onclick=function()
 {
     signin.style.display="none";
@@ -42,7 +45,7 @@ goToSignUp.onclick=function()
 
 
 
-
+//on loading hide all modals
 window.onclick = function(event) {
     if (event.target === signup_modal) {
         signup.style.display = "none";
