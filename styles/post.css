@@ -40,6 +40,7 @@
     color: white;
     border: none;
     box-shadow: 2px 5px 10px #ff3385;
+    cursor: pointer;
 
 }
 /*save button*/
@@ -52,6 +53,7 @@
     color: white;
     border: none;
     box-shadow: 2px 5px 10px #ff3385;
+    cursor: pointer;
 }
 
 /*Styling of Like Button*/
@@ -65,11 +67,13 @@
     border: none;
     box-shadow: 2px 5px 10px #ff3385;
     border-radius: 5px;
+    cursor: pointer;
 }
 /*Styling of comment Button*/
 .container #comment{
     height: 100px;
     width: 60%;
+    cursor: pointer;
 }
 
 /*styling of the comment box*/
