@@ -54,3 +54,11 @@ window.onclick = function(event) {
         signin.style.display = "none";
     }
 }
+
+
+
+
+
+
+
+/***************************************Thank You by Manank Gupta****************************************************************/
