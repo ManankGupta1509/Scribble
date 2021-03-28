@@ -1,14 +1,17 @@
+/*Setting the Background of whole page*/
 body{
     background-color: orange;
 
 }
 
+/*Styling of the list of posts in a two by two method*/
 .allPosts{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 
 }
+/*inclosing in individual boxes*/
 .allPosts .posts{
     margin: 10px 20px 10px 20px ;
     width: 40%;
@@ -17,6 +20,7 @@ body{
     background-color: white;
     overflow: hidden;
 }
+/*Styling author name*/
 .allPosts .posts .postAuthor{
 
     font-size: 20px;
@@ -26,6 +30,8 @@ body{
     background-color: white;
     padding:0 20px;
 }
+
+/*Styling of Post Content*/
 .allPosts .posts .postAuthor h1{
 
     font-size: 20px;
@@ -53,7 +59,7 @@ body{
 }
 
 
-/* Conformation Box */
+/*Styling of Conformation Box */
 .confirmationBox_model{
     position: fixed;
     display: none;
@@ -78,6 +84,8 @@ body{
 .confirmationBox_model .conformationBox h1{
     font-size: 18px;
 }
+
+/*Styling of Yes and No Buttons*/
 .confirmationBox_model .conformationBox .buttons{
     display: flex;
     justify-content: center;

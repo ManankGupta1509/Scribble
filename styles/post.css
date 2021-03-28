@@ -1,11 +1,14 @@
+/*Styling of the Container Having all the data*/
 .container{
     margin: 0 5%;
 }
-
+/*heading Design*/
 .container #heading{
     text-align: center;
     font-size: 30px;
 }
+
+/*design for editing the heading*/
 .container #heading_edit{
     margin:0px auto;
     display:none;
@@ -15,6 +18,7 @@
     border: 2px solid lightpink;
 }
 
+/*Styling of Edit and save button*/
 .container .name_edit{
     display: flex;
     align-items: center;
@@ -27,7 +31,7 @@
 
 }
 
-
+/*edit button*/
 .container .name_edit #edit{
     height: 40px;
     font-size: 15px;
@@ -38,7 +42,7 @@
     box-shadow: 2px 5px 10px #ff3385;
 
 }
-
+/*save button*/
 .container .name_edit #save{
     display: none;
     height: 40px;
@@ -48,8 +52,9 @@
     color: white;
     border: none;
     box-shadow: 2px 5px 10px #ff3385;
-
 }
+
+/*Styling of Like Button*/
 .container #like{
     margin-top: 10px;
     height: 40px;
@@ -61,11 +66,13 @@
     box-shadow: 2px 5px 10px #ff3385;
     border-radius: 5px;
 }
+/*Styling of comment Button*/
 .container #comment{
     height: 100px;
     width: 60%;
 }
 
+/*styling of the comment box*/
 .container #postComment{
     margin-top: 10px;
     height: 40px;
@@ -77,6 +84,7 @@
     box-shadow: 2px 5px 10px #ff3385;
 }
 
+/*Display of all the comments in the section*/
 .container #allComment{
     background-color: gray;
     display: flex;
@@ -96,6 +104,8 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+/*Styling of the Edited Post Content Display*/
 #postContent_edit{
     width: 100%;
     display: none;

@@ -1,24 +1,23 @@
-
+/*Putting the whole page in box*/
 * {box-sizing: border-box;}
 
+/*Styling of overall Body*/
 body { 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: 100% 100%;
 }
 
+/*fixing the image to set the background*/
 #imf{
     display: flex;
     justify-content: center;
     margin-top: 150px;
 }
-
+/*Styling of the middle buttons Create and All posts*/
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -69,7 +68,7 @@ body {
 
 
 
-
+/*Styling of the model Create-Post Model*/
 .createPost_modal{
     position: fixed;
     display: none;
@@ -124,6 +123,8 @@ body {
     border: 2px solid #dddddd;
     color: #1b1717;
 }
+
+/*Adding Animation in opening of modals*/
 @-webkit-keyframes fadeIn {
     from {opacity: 0} 
     to {opacity: 1}
