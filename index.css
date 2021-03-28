@@ -1,0 +1,135 @@
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('C:/Users/Hari/Documents/GitHub/Course+6+Project+Stub+-+Scribbler/images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 100% 100%;
+}
+
+#imf{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button3 {
+    width: 15%;
+    margin:30px 30%;
+    justify-content: center;
+    background-color: #4CAF50;
+    height: 30px;
+    color:white;
+    padding: 5px 10px;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .button3:hover {
+      background-color:blue;
+      color: white;
+  }
+
+  .button2 {
+    background-color: orange; 
+    color: black; 
+    border: 3px solid #008CBA;
+    margin-right: 25px;
+    border-radius: 6px;
+    
+  }
+  
+  .button2:hover {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #4CAF50;
+  }
+
+
+
+
+
+.createPost_modal{
+    position: fixed;
+    display: none;
+    z-index:1;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    margin:-5px;
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+.createPost_form{
+    padding: 15px 50px;
+    background-color: #dddddd;
+    color: black;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 50%;
+    height: 80%;
+}
+
+.createPost_form h1{
+    text-align: center;
+}
+.createPost_form form input{
+    width: 50%;
+    height: 30px;
+    margin-top: 2px;
+    font-size: 15px;
+    border: 2px solid #dddddd;
+    color: #1b1717;
+}
+.createPost_form form input:focus{
+    border-bottom: 2px solid #4CAF50;
+}
+
+.createPost_form form p{
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.createPost_form form textarea{
+    width: 100%;
+    height: 300px;
+    margin-top: 2px;
+    font-size: 15px;
+    border: 2px solid #dddddd;
+    color: #1b1717;
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
