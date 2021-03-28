@@ -1,72 +1,70 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- TODO: Include Font Awesome file here -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- TODO: Include Google Fonts file here -->
-    <link href='https://fonts.googleapis.com/css?family=Marck+Script|Satisfy' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="../styles/header.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../styles/bloglist.css" />
-    <title>All Posts</title>
+    <head>
+        <!--Meta char used to make pages responsive-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+        <!--  Font Awesome file here -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+        <!-- Google Fonts file here -->
+        <link href='https://fonts.googleapis.com/css?family=Marck+Script|Satisfy' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    
+       <!--linking of css files here-->
+        <link rel="stylesheet" type="text/css" media="screen" href="../styles/header.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../styles/bloglist.css" />
+        
+        <!--Title of Part-B-->
+        <title>All Posts</title>
 </head>
 
 <body>
-    <!-- TODO: Include code for header here -->
+<!--code for header and List Display here -->
 
 
-    <!-- Sign in -->
+<!--header Code Start -->
+
+<!--Modal Start-->
+<!-- 1.Sign in -->
 <div class="Signin modal">
     <div class="interior_of_Model">
         <span class="close">&times;</span>
         <h1>Welcome Back!</h1>
         <hr>
-
         <form>
             <p>Username</p>
             <input type="text"  placeholder="Enter Username" required>
-
             <p>Password</p>
             <input type="password"  placeholder="Enter Password" required>
-
             <input type="submit" class="button"  value="Login">
-
         </form>
         <h3 id="not_member">Not a member?<a id="goToSignUp"><span> Sign up </span></a></h3>
-
     </div>
 </div>
 
-  
-    
-    <!-- Sign up -->
+
+
+<!-- 2. Sign up -->
 <div class="Signup modal">
     <div  class="interior_of_Model">
         <span class="close">&times;</span>
         <h1>Get Started</h1>
         <hr>
-
         <form>
             <p>Full Name</p>
             <input type="text"   placeholder="Enter Full Name" required>
-
             <p>Username</p>
             <input type="text"  placeholder="Enter Username" required>
-
             <p>Password</p>
             <input type="password"  placeholder="Enter Password" required>
-
             <p> Confirm Password</p>
             <input type="password"  placeholder="Confirm Password" required>
-
             <input type="submit" class="button" value="Sign up" >
         </form>
-
     </div>
 </div>
 
@@ -82,20 +80,22 @@
     </div>
 </div>
 
+<!--Logo and buttons of Header-->
 <div class="header">
     <div class="header-left">
-    <a  class="logo-title">ScriBBler</a>
-    <p class="middleText">Explore, Imagine, Create</p>
-</div>    
-        <div class="header-right">
+         <a  class="logo-title">ScriBBler</a>
+         <p class="middleText">Explore, Imagine, Create</p>
+    </div>    
+    <div class="header-right">
           <button id="btn1">Sign In</button>
           <button id="btn">Sign Up</button>
-        </div>
-      </div>
+    </div>
+</div>   
 
-    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
+<!--Header Code Finish-->
 
-    <!-- list of all posts starts here -->
+    
+<!-- list of all posts starts here -->
     <div class="allPosts">
 
         <!-- post 1 starts here -->
@@ -104,10 +104,9 @@
                 <h1>Fuse</h1>
             </div>
 
-            <div class="postContent">
-                   
-                        <img class="trash" src="https://img.icons8.com/plasticine/30/000000/delete-forever.png"/>
-                         <h2>That Time I Got Reincarnated As A Slime</h2>
+            <div class="postContent">                 
+                <img class="trash" src="https://img.icons8.com/plasticine/30/000000/delete-forever.png"/>
+                <h2>That Time I Got Reincarnated As A Slime</h2>
                 <p> The darkness envelopes all, preventing me from seeing any shape or figure.
                     Where am I? Besides, what had happened?
                     Wasn’t there someone making fun of me, calling me a… sage?… no, a great sage.
@@ -149,7 +148,7 @@
                     Rather than despairing, the only thing I can do is go insane, huh?
                     And then,</p>
                 <span>
-                    <a href="post.html"><img src="https://img.icons8.com/android/24/000000/more.png"/></a>
+                <a href="post.html"><img src="https://img.icons8.com/android/24/000000/more.png"/></a>
                 </span>
             </div>
         </div>
@@ -162,10 +161,8 @@
             </div>
 
             <div class="postContent">
-                   
-
-                        <img class="trash" src="https://img.icons8.com/plasticine/30/000000/delete-forever.png"/>
-                         <h2>What is linting and how can it save you time?</h2>
+                <img class="trash" src="https://img.icons8.com/plasticine/30/000000/delete-forever.png"/>
+                <h2>What is linting and how can it save you time?</h2>
                 <p>One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
                 <span>
                     <a href="post.html"><img src="https://img.icons8.com/android/24/000000/more.png"/></a>
@@ -181,11 +178,8 @@
             </div>
 
             <div class="postContent">
-                   
-
-                        <img class="trash" src="https://img.icons8.com/plasticine/30/000000/delete-forever.png"/>
-                         <h2>How to Get More Views on Your Tech Blog</h2>
-
+                <img class="trash" src="https://img.icons8.com/plasticine/30/000000/delete-forever.png"/>
+                <h2>How to Get More Views on Your Tech Blog</h2>
                 <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
                 <span>
                     <a href="post.html"><img src="https://img.icons8.com/android/24/000000/more.png"/></a>
@@ -201,11 +195,8 @@
             </div>
 
             <div class="postContent">
-                    
-
-                        <img class="trash" src="https://img.icons8.com/plasticine/30/000000/delete-forever.png"/>
-                        <h2>How to write easily describable code</h2>
-
+                <img class="trash" src="https://img.icons8.com/plasticine/30/000000/delete-forever.png"/>
+                <h2>How to write easily describable code</h2>
                 <p>When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
                     leads to confusion when discussing the code.</p>
                 <span>
@@ -222,10 +213,8 @@
             </div>
 
             <div class="postContent">
-                    
-                        <img class="trash" src="https://img.icons8.com/plasticine/30/000000/delete-forever.png"/>
-                        <h2>Everything you should know about ‘module’ & ‘require’ in Node.js</h2>
-
+                <img class="trash" src="https://img.icons8.com/plasticine/30/000000/delete-forever.png"/>
+                <h2>Everything you should know about ‘module’ & ‘require’ in Node.js</h2>
                 <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
                     named xyz.</p>
                 <span>
@@ -234,14 +223,12 @@
             </div>
         </div>
         <!-- post 5 ends here -->
-
-        <!-- TODO: Write code for delete post modal here -->
-
     </div>
     <!-- list of all posts ends here -->
 
+    <!--Linking of Scripts-->
     <script src="../scripts/header.js" type="text/javascript" ></script>
     <script src="../scripts/bloglist.js" type="text/javascript" ></script>
 </body>
-
+<!--Blog List Code Finish-->
 </html>

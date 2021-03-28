@@ -1,118 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Meta char used to make pages responsive-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- TODO: Include Font Awesome file here -->
+
+
+    <!--  Font Awesome file here -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- TODO: Include Google Fonts file here -->
+
+    <!-- Google Fonts file here -->
     <link href='https://fonts.googleapis.com/css?family=Marck+Script|Satisfy' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 
+   <!--linking of css files here-->
     <link rel="stylesheet" type="text/css" media="screen" href="styles/header.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/index.css">
+
+    <!--Title of HomePage-->
     <title>Scribbler</title>
 </head>
 
 <body>
-    <!-- TODO: Include all your code for the header and home page here -->
+    <!-- all code for the header and home page here -->
     
 
+<!--header Code Start -->
 
-<!-- Sign in -->
-<div class="Signin modal">
-    <div class="interior_of_Model">
-        <span class="close">&times;</span>
-        <h1>Welcome Back!</h1>
-        <hr>
-
-        <form>
-            <p>Username</p>
-            <input type="text"  placeholder="Enter Username" required>
-
-            <p>Password</p>
-            <input type="password"  placeholder="Enter Password" required>
-
-            <input type="submit" class="button"  value="Login">
-
-        </form>
-        <h3 id="not_member">Not a member?<a id="goToSignUp"><span> Sign up </span></a></h3>
-
+<!--Modal Start-->
+<!-- 1.Sign in -->
+    <div class="Signin modal">
+        <div class="interior_of_Model">
+            <span class="close">&times;</span>
+            <h1>Welcome Back!</h1>
+            <hr>
+            <form>
+                <p>Username</p>
+                <input type="text"  placeholder="Enter Username" required>
+                <p>Password</p>
+                <input type="password"  placeholder="Enter Password" required>
+                <input type="submit" class="button"  value="Login">
+            </form>
+            <h3 id="not_member">Not a member?<a id="goToSignUp"><span> Sign up </span></a></h3>
+        </div>
     </div>
-</div>
 
   
     
-    <!-- Sign up -->
-<div class="Signup modal">
-    <div  class="interior_of_Model">
-        <span class="close">&times;</span>
-        <h1>Get Started</h1>
-        <hr>
-
-        <form>
-            <p>Full Name</p>
-            <input type="text"   placeholder="Enter Full Name" required>
-
-            <p>Username</p>
-            <input type="text"  placeholder="Enter Username" required>
-
-            <p>Password</p>
-            <input type="password"  placeholder="Enter Password" required>
-
-            <p> Confirm Password</p>
-            <input type="password"  placeholder="Confirm Password" required>
-
-            <input type="submit" class="button" value="Sign up" >
-        </form>
-
+<!-- 2. Sign up -->
+    <div class="Signup modal">
+        <div  class="interior_of_Model">
+            <span class="close">&times;</span>
+            <h1>Get Started</h1>
+            <hr>
+            <form>
+                <p>Full Name</p>
+                <input type="text"   placeholder="Enter Full Name" required>
+                <p>Username</p>
+                <input type="text"  placeholder="Enter Username" required>
+                <p>Password</p>
+                <input type="password"  placeholder="Enter Password" required>
+                <p> Confirm Password</p>
+                <input type="password"  placeholder="Confirm Password" required>
+                <input type="submit" class="button" value="Sign up" >
+            </form>
+        </div>
     </div>
-</div>
     
     
 <!-- Creat post Model -->
-<div class="createPost_modal">
-    <div class="createPost_form">
-        <span class="close">&times;</span>
-        <h1>Pen your post</h1>
-        <hr>
-
-        <form>
-            <p>Title:</p>
-            <input type="text">
-
-            <p>Content:</p>
-            <textarea></textarea>
-            <input type="submit" class="button3" value="Create" >
-
-        </form>
-
-
-    </div>
-</div>
-
-
-
-
-
-    <div class="header">
-    <div class="header-left">
-    <a  class="logo-title">ScriBBler</a>
-    <p class="middleText">Explore, Imagine, Create</p>
-</div>    
-        <div class="header-right">
-          <button id="btn1">Sign In</button>
-          <button id="btn">Sign Up</button>
+    <div class="createPost_modal">
+        <div class="createPost_form">
+            <span class="close">&times;</span>
+            <h1>Pen your post</h1>
+            <hr>
+            <form>
+                <p>Title:</p>
+                <input type="text">
+                <p>Content:</p>
+                <textarea></textarea>
+                <input type="submit" class="button3" value="Create" >
+            </form>
         </div>
-      </div>
-      
-<div id="imf">
-         <a href="html/bloglist.html"><button class="button button2">All Posts</button></a>
-       <button class="button button2">Create Posts</button>
     </div>
+
+
+
+
+<!--Logo and buttons of Header-->
+    <div class="header">
+        <div class="header-left">
+             <a  class="logo-title">ScriBBler</a>
+             <p class="middleText">Explore, Imagine, Create</p>
+        </div>    
+        <div class="header-right">
+              <button id="btn1">Sign In</button>
+              <button id="btn">Sign Up</button>
+        </div>
+    </div>   
+    
+<!--Header Code Finish-->
+
+<!--Body Code For Middle Buttons And Background-->
+    <div id="imf">
+             <a href="html/bloglist.html"><button class="button button2">All Posts</button></a>
+             <button class="button button2">Create Posts</button>
+    </div>
+<!--Body Code Finish-->
+
+<!--Linking of Scripts-->
     <script src="scripts/header.js"></script>
     <script src="scripts/index.js"></script>
 </body>
-
+<!--Home Page Finish-->
 </html>

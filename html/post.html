@@ -1,87 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Full View</title>
-
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/post.css">
+    <head>
+        <!--Meta char used to make pages responsive-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+        <!--  Font Awesome file here -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+        <!-- Google Fonts file here -->
+        <link href='https://fonts.googleapis.com/css?family=Marck+Script|Satisfy' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    
+       <!--linking of css files here-->
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/post.css">
+        
+       <!--Title For the Full View-->
+        <title>Full View</title> 
 </head>
 <body>
 
-<!-- Sign in -->
+<!--code for header and List Display here -->
+
+
+<!--header Code Start -->
+
+<!--Modal Start-->
+<!-- 1.Sign in -->
 <div class="Signin modal">
     <div class="interior_of_Model">
         <span class="close">&times;</span>
         <h1>Welcome Back!</h1>
         <hr>
-
         <form>
             <p>Username</p>
             <input type="text"  placeholder="Enter Username" required>
-
             <p>Password</p>
             <input type="password"  placeholder="Enter Password" required>
-
             <input type="submit" class="button"  value="Login">
-
         </form>
         <h3 id="not_member">Not a member?<a id="goToSignUp"><span> Sign up </span></a></h3>
-
     </div>
 </div>
 
-  
-    
-    <!-- Sign up -->
+
+
+<!-- 2. Sign up -->
 <div class="Signup modal">
     <div  class="interior_of_Model">
         <span class="close">&times;</span>
         <h1>Get Started</h1>
         <hr>
-
         <form>
             <p>Full Name</p>
             <input type="text"   placeholder="Enter Full Name" required>
-
             <p>Username</p>
             <input type="text"  placeholder="Enter Username" required>
-
             <p>Password</p>
             <input type="password"  placeholder="Enter Password" required>
-
             <p> Confirm Password</p>
             <input type="password"  placeholder="Confirm Password" required>
-
             <input type="submit" class="button" value="Sign up" >
         </form>
-
     </div>
 </div>
+
     
-    
-<!-- LOGO and header -->
+<!--Logo and buttons of Header-->
 <div class="header">
     <div class="header-left">
-    <a  class="logo-title">ScriBBler</a>
-    <p class="middleText">Explore, Imagine, Create</p>
-</div>    
-        <div class="header-right">
+         <a  class="logo-title">ScriBBler</a>
+         <p class="middleText">Explore, Imagine, Create</p>
+    </div>    
+    <div class="header-right">
           <button id="btn1">Sign In</button>
           <button id="btn">Sign Up</button>
-        </div>
-      </div>
-      
+    </div>
+</div>   
 
+<!--Header Code Finish-->
+
+<!--Full View Of Post Content-->
 <div class="container">
+    <!--Heading-->
     <h1 id="heading">That Time I Got Reincarnated As A Slime</h1>
-    <input type="text" id="heading_edit">
+    <!--Heading for edit-->
+    <textarea id="heading_edit"></textarea>
     <div class="name_edit">
         <p id="name">Author : Fuse</p>
+        <!--Edit And Save Button-->
         <button id="edit" onclick="editPost()">Edit <img src="https://img.icons8.com/metro/15/ffffff/edit-property.png"/></button>
         <button id="save" onclick="savePost()">Save <img src="https://img.icons8.com/ios-filled/15/ffffff/save--v1.png"/></button>
     </div>
+    <!--Post Full Content-->
     <p id="postContent">It’s dark.
         The darkness envelopes all, preventing me from seeing any shape or figure.
         Where am I? Besides, what had happened?
@@ -293,20 +307,31 @@
         Perhaps this “Voice” is only an auditory hallucination I made myself. Well, that would be fine in its own way.
         And thus, since a long time ago, my heart has felt at ease.
      </p>
-    <!-- hidden body for edit -->
+    <!-- Post body for edit -->
     <textarea id="postContent_edit"></textarea>
+    
+    <!--Like Button-->
     <button id="like" onclick="likePost()"><img src="https://img.icons8.com/fluent-systems-filled/20/ffffff/facebook-like.png"/>Like</button>
+    
+    <!--Like Counter-->
     <p id="likeCounter">Be first one to like this!</p>
+    
+    <!--Comment Writting section-->
     <textarea id="comment" placeholder="leave a comment..."></textarea><br>
     <button id="postComment" onclick="postComment()">Comment</button>
+    
+    
+    <!--Comment Display Section-->
+    <!--Heading-->
     <h3 id="commentHeading">ALL Comments</h3>
+    <!--All Comment Display-->
     <div id="allComment">
-
     </div>
 </div>
 
-
+<!--Linking Of Scripts-->
 <script src="../scripts/post.js"></script>
 <script src="../scripts/header.js"></script>
 </body>
+<!--Full View Code Finish-->
 </html>
