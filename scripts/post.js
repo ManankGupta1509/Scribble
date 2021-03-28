@@ -79,6 +79,7 @@ function likePost() {
 
     //change button value from like to liked
     like.innerHTML="<img src=\'https://img.icons8.com/fluent-systems-filled/20/ffffff/facebook-like.png\'/>Liked!";
+    like.disabled="true";
     //increase conter with each click
     count++;
     //if 1 display has liked
