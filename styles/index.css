@@ -7,7 +7,7 @@ body {
 }
 
 body {
-    background-image: url('C:/Users/Hari/Documents/GitHub/Course+6+Project+Stub+-+Scribbler/images/background.jpg');
+    background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: 100% 100%;
